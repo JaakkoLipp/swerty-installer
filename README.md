@@ -3,6 +3,7 @@
 ![layout](https://johanegustafsson.net/projects/swerty/images/swerty-linux.svg)
 
 A linux shell script which installs the swerty keyboard layout by johanegustafsson
+<<<<<<< HEAD
 Layout creator credit to: [johanegustafsson.net](https://johanegustafsson.net/projects/swerty/)
 
 The script creates backups of the original configuration files in `/usr/share/X11/xkb/` and then applies the necessary changes.
@@ -59,3 +60,6 @@ The install script will:
 - Check if the modifications are already present before applying any changes.
 
 ---
+=======
+Original source and credit to: https://johanegustafsson.net/projects/swerty/
+>>>>>>> a340960 (Update README.md)
