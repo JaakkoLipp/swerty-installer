@@ -10,10 +10,11 @@ The script creates backups of the original configuration files in `/usr/share/X1
 ## Disclaimer
 
 **USE AT OWN RISK.** This script modifies system configuration files and should be used only after confirming that you have proper backups. Always review the script and test it in a safe environment before deploying on production systems.
+Tested to be working on Ubuntu 24.10.
 
 ## Prerequisites
 
-- Linux system using X11.
+- Linux system compatible with X11.
 - Root privileges (the script checks for root and exits if not run as root).
 - POSIX-compliant shell (e.g., `/bin/sh`).
 - The custom file `/swerty-linux/se.txt` containing your Swerty layout modifications.
@@ -42,9 +43,5 @@ The script will:
 - Insert the new variant block into `evdev.xml`.
 - Append the corresponding line into `evdev.lst`.
 - Check if the modifications are already present before applying any changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
