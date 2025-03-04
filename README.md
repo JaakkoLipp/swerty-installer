@@ -1,4 +1,4 @@
-## Swerty Keyboard Layout Installer for Linux
+# Swerty Keyboard Layout Installer for Linux
 
 ![layout](https://johanegustafsson.net/projects/swerty/images/swerty-linux.svg)
 
@@ -8,30 +8,24 @@ Layout creator credit to: [johanegustafsson.net](https://johanegustafsson.net/pr
 
 The script creates backups of the original configuration files in `/usr/share/X11/xkb/` and then applies the necessary changes.
 
-### Disclaimer
+## Disclaimer
 
 **USE AT OWN RISK.** This script modifies system configuration files and should be used only after confirming that you have proper backups. Always review the script and test it in a safe environment before deploying on production systems.
 Tested to be working on Ubuntu 24.10.
 
-### Prerequisites
+## Prerequisites
 
 - Linux system compatible with X11.
 - Root privileges (the script checks for root and exits if not run as root).
 - POSIX-compliant shell (e.g., `/bin/sh`).
 - The custom file `/swerty-linux/se.txt` containing your Swerty layout modifications.
 
-### Installation
+## Installation
 
 1. Clone or download this repository.
 2. Ensure your custom `se.txt` file is available at `/swerty-linux/se.txt` (or modify the script to point to its correct location).
 
-### Usage
-
-Make the script executable:
-
-```sh
-chmod +x install-swerty.sh
-```
+## Usage
 
 Run the script as root:
 
@@ -39,15 +33,7 @@ Run the script as root:
 sudo ./install_swerty.sh
 ```
 
-Uninstall swerty (restores backups):
-
-```sh
-chmod +x uninstall-swerty.sh && sudo ./uninstall_swerty.sh
-```
-
----
-
-The install script will:
+The script will:
 - Check for root privileges.
 - Verify that the necessary files exist.
 - Create backups of the following files:
